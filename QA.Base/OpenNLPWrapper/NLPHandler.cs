@@ -50,6 +50,7 @@ namespace QA.Base.OpenNLPWrapper
             string basePath = @"Resources\";
             string zipFilePath = "Resources.zip";
             string PathToExtract = @".\";
+            if (Directory.Exists(basePath)) Directory.Delete(basePath, true);
             ZipFile.ExtractToDirectory(zipFilePath, PathToExtract);
         }
     }
