@@ -19,8 +19,9 @@ namespace QA.Base.Implements
             foreach (var pivotFromQuestion in pivots)
             {
                 var sentences = paragraphObject.Sentences.Where(c => c.Words.Any(w => w.SubjectInsensitive == pivotFromQuestion.SubjectInsensitive));
+                //comparing with answer list is not that great, the code should be more self intelligent to provide answers.
                 answer = possibleAnswerList.FirstOrDefault(c => sentences.Any(d => d.SubjectInsensitive.Contains(c.SubjectInsensitive)));
-                if (answer != null && answerList.All(c => c.Subject != answer.Subject))
+                if (answer != null && answerList.Any(c => c.Subject == answer.Subject) == false)
                 {
                     answer.Index = question.Index;
                     break;
@@ -31,7 +32,6 @@ namespace QA.Base.Implements
                     //need to repeat
                 }
             }
-
 
             return answer;
         }

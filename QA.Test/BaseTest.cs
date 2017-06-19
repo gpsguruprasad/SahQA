@@ -44,19 +44,19 @@ namespace QA.Test
         public void TestQA2()
         {
             ////
-            var paragraph = "The first practical ICs were invented by Jack Kilby at Texas Instruments and Robert Noyce at Fairchild Semiconductor.[47] Kilby recorded his initial ideas concerning the integrated circuit in July 1958, successfully demonstrating the first working integrated example on 12 September 1958.[48] In his patent application of 6 February 1959, Kilby described his new device as a body of semiconductor material...wherein all the components of the electronic circuit are completely integrated.[49][50] Noyce also came up with his own idea of an integrated circuit half a year later than Kilby.[51] His chip solved many practical problems that Kilby's had not. Produced at Fairchild Semiconductor, it was made of silicon, whereas Kilby's chip was made of germanium. This new development heralded an explosion in the commercial and personal use of computers and led to the invention of themicroprocessor.While the subject of exactly which device was the first microprocessor is contentious, partly due to lack of agreement on the exact definition of the term 'microprocessor', it is largely undisputed that the first single-chip microprocessor was the Intel 4004,[52] designed and realized byTed Hoff, Federico Faggin, and Stanley Mazor atIntel.[53]";
+            var paragraph = "The first practical ICs were invented by Jack Kilby at Texas Instruments and Robert Noyce at Fairchild Semiconductor. In July 1958 Kilby recorded his initial ideas concerning the integrated circuit. Successfully demonstrating the first working integrated example on 12 September 1958. In his patent application of 6 February 1959, Kilby described his new device as a body of semiconductor material...wherein all the components of the electronic circuit are completely integrated. Noyce also came up with his own idea of an integrated circuit half a year later than Kilby. His chip solved many practical problems that Kilby's had not. Produced at Fairchild Semiconductor, it was made of silicon, whereas Kilby's chip was made of germanium. This new development heralded an explosion in the commercial and personal use of computers and led to the invention of the microprocessor. While the subject of exactly which device was the first microprocessor is contentious, partly due to lack of agreement on the exact definition of the term 'microprocessor'. The first single-chip microprocessor was the Intel 4004, designed and realized by Ted Hoff, Federico Faggin, and Stanley Mazor";
             var Q1 = "who invented the first practical ICs?";
             var Q2 = "How did Kilby describe his new device?";
             var Q3 = "what was kilby's chip made of?";
             var Q4 = "what was the first single-chip microprocessor?";
-            var Q5 = "who was the designer of Intel 4004?";
-            var answerList = "Ted Hoff, Federico Faggin, and Stanley Mazor;Intel 4004;as a body of semiconductor material...wherein all the components of the electronic circuit are completely integrated;germanium;Jack Kilby";
+            var Q5 = "When kilby recorded his initial ideas?";
+            var answerList = "July 1958;Intel 4004;as a body of semiconductor material...wherein all the components of the electronic circuit are completely integrated;germanium;Jack Kilby";
             ////
             var A1 = "Jack Kilby";
             var A2 = "as a body of semiconductor material...wherein all the components of the electronic circuit are completely integrated";
             var A3 = "germanium";
             var A4 = "Intel 4004";
-            var A5 = "Ted Hoff, Federico Faggin, and Stanley Mazor";
+            var A5 = "July 1958";
             ////
 
             var parser = UnityHandler.Instance.Resolve<IBaseParser>();

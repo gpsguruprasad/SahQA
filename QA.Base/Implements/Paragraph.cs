@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using MoreLinq;
+using OpenNLP.Tools.PosTagger;
 using QA.Base.Handlers;
 using QA.Base.Interface;
 using QA.Base.OpenNLPWrapper;

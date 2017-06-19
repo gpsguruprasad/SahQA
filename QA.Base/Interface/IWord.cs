@@ -2,6 +2,6 @@
 {
     public interface IWord : IQABase, IVisitorAction
     {
-        string Tag { get; set; }
+        string Tag { get; }
     }
 }

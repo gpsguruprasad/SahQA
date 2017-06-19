@@ -27,14 +27,10 @@ namespace QA.Base.Implements
 
         public List<IWord> PivotWord(int rank)
         {
-            //todo : operate on token and grammer, performance issues
+            //todo : operate on token and grammer, performance issues, have to ignore frequent words
             var wordParent = Parent as IWordParent;
             var list = wordParent.Words.Where(word => Words.Select(c => c.SubjectInsensitive).Contains(word.SubjectInsensitive));
-            var list2 = list.DistinctBy(c => c.SubjectInsensitive)
-                .OrderBy(d => d.Count)
-                .Take(rank)
-                .ToList();
-            return list2;
+            return list.DistinctBy(c => c.SubjectInsensitive).OrderBy(d => d.Count).Take(rank).ToList();
         }
     }
 }

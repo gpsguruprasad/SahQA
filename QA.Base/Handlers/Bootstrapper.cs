@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System.CodeDom;
+using System.Collections.Generic;
 using Microsoft.Practices.Unity;
 using QA.Base.Implements;
 using QA.Base.Interface;
